@@ -24,11 +24,11 @@ namespace Xml_Loader
 
             Console.WriteLine(A.Name);
             //attribute を取得するときはXmlNodeをXmlElementに変換する。
-            Console.WriteLine(((XmlElement)A).GetAttribute("ID"));
+            Console.WriteLine(((XmlElement)A).GetAttribute("attr1"));
             
             //タグの名前で検索。
 
-            XmlNode B = root.SelectSingleNode("Dataset");
+            XmlNode B = root.SelectSingleNode("gml:name");
 
             Console.WriteLine(((XmlElement)B).GetAttribute("attr2"));
             
